@@ -23,7 +23,8 @@
         <p>
           Bill
         </p>
-        <input type="number" class="bill"><img src="images/icon-dollar.svg" class="dollar" alt="">
+        <input type="number" class="bill" id="bill" placeholder="0">
+        <img src="images/icon-dollar.svg" class="dollar" alt="">
           <div class="tip">
             <p>
               Select Tip %
@@ -54,38 +55,44 @@
           <p>
             Number of People
           </p>
-          <input type="number" class="people"><img src="images/icon-person.svg" class="person"  alt="">
+          <input type="number" class="people" placeholder="0"><img src="images/icon-person.svg" class="person"  alt="">
 
       </section>
 
       <section class="right">
-        <div class="right-one">
+        <div class="r-sec">
+
+          <div class="right-one">
+              <div class="cal">
+                <h5>
+                  Tip Amount
+                </h5>
+                <h6>
+                  / person
+                </h6>
+              </div>
+              <div class="amount" id="one">
+                $0.00
+              </div>
+          </div>
+
+          <div class="right-two">
             <div class="cal">
               <h5>
-                Tip Amount
+                Total
               </h5>
               <h6>
                 / person
               </h6>
             </div>
-            <div class="amount" id="one">
-              $1.00
+            <div class="amount" id="two">
+              $0.00
             </div>
+          </div>
+
         </div>
 
-        <div class="right-two">
-          <div class="cal">
-            <h5>
-              Total
-            </h5>
-            <h6>
-              / person
-            </h6>
-          </div>
-          <div class="amount" id="two">
-            $1.00
-          </div>
-        </div>
+
 
         <button type="reset">
           Reset
