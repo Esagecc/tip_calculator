@@ -7,37 +7,103 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
 
-  Bill
+  <main>
+    <header>
+      <img src="images/logo.svg" alt="">
+    </header>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    <div class="calculator">
+      <section class="left">
+        <p>
+          Bill
+        </p>
+        <input type="number" class="bill"><img src="images/icon-dollar.svg" class="dollar" alt="">
+          <div class="tip">
+            <p>
+              Select Tip %
+            </p>
 
-  Number of People
+            <div class="percent">
+              <div class="card">
+                5%
+              </div>
+              <div class="card">
+                10%
+              </div>
+              <div class="card">
+                15%
+              </div>
+              <div class="card">
+                25%
+              </div>
+              <div class="card">
+                50%
+              </div>
+              <div class="card">
+                Custom
+              </div>
+            </div>
+          </div>
 
-  Tip Amount
-  / person
+          <p>
+            Number of People
+          </p>
+          <input type="number" class="people"><img src="images/icon-person.svg" class="person"  alt="">
 
-  Total
-  / person
+      </section>
 
-  Reset
+      <section class="right">
+        <div class="right-one">
+            <div class="cal">
+              <h5>
+                Tip Amount
+              </h5>
+              <h6>
+                / person
+              </h6>
+            </div>
+            <div class="amount" id="one">
+              $1.00
+            </div>
+        </div>
+
+        <div class="right-two">
+          <div class="cal">
+            <h5>
+              Total
+            </h5>
+            <h6>
+              / person
+            </h6>
+          </div>
+          <div class="amount" id="two">
+            $1.00
+          </div>
+        </div>
+
+        <button type="reset">
+          Reset
+        </button>
+
+      </section>
   
+    </div>
+
+  </main>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="http://esagewebdev.com/" target="_blank">Elizabeth Cantu</a>.
   </div>
+  </div>
+
+  <script src="script.js" ></script>
 </body>
 </html>
