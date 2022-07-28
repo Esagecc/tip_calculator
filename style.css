@@ -32,6 +32,10 @@ header {
     position: relative;
 }
 
+.left p {
+    padding-bottom: 12px;
+}
+
 .calculator {
     background-color: var(--white);
     border-radius: 20px;
@@ -48,30 +52,27 @@ header {
     color: var(--dk-cyan);
     border: none;
     width: 100%;
-    height: 2.8rem;
+    height: 3rem;
     border-radius: 5px;
-    margin: 10px 0 30px;
     text-align: right;
     font-family: 'Space Mono', monospace;
     font-size: 1.55rem;
     font-weight: 700;
+    padding-right: 20px;
 }
 
-
 .dollar {
-    transform: translate(20px, -60px);
+    transform: translate(20px, -32px);
 }
 
 .percent {
-    padding-top: 20px;
+    padding: 20px 0 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 15px;
-    padding-bottom: 30px;
 }
-
 
 .card {
     display: flex;
@@ -81,17 +82,18 @@ header {
     background-color: var(--dk-cyan);
     color: var(--white);
     height: 3rem;
-    border-radius: 8px;
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
-
-.card:nth-child(6) {
-    background-color: var(--lter-gray-cyan);
-    color: var(--dk-gray-cyan);
+.card:hover {
+    background-color: var(--cyan);
+    color: var(--dk-cyan);
 }
 
 .person {
-    transform: translate(20px, -60px);
+    transform: translate(20px, -32px);
 }
 
 .right {
@@ -154,11 +156,7 @@ button {
 
     main {
         width: 920px;
-        max-height: 480px;
-    }
-
-    .dollar {
-        transform: translate(20px, -50px);
+        height: 480px;
     }
 
     .calculator {
@@ -171,14 +169,6 @@ button {
         font-size: 1.05rem;
     }
 
-    .calculator input {
-        margin: 10px 0 20px;
-    }
-
-   .people {
-        margin: 5px 0;
-   }
-
     .left {
         padding-top: 20px;
         flex-basis: 47%;
@@ -187,18 +177,21 @@ button {
     .percent {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        padding-bottom: 42px;
+        padding: 22px 0 38px;
+    }
+
+    .dollar {
+        transform: translate(20px, -32px);
     }
 
     .person {
-        transform: translate(20px, -50px);
+        transform: translate(20px, -32px);
     }
-    
 
     .right {
         position: relative;
         flex-basis: 47%;
-        padding: 52px 30px 30px;
+        padding: 52px 30px 10px;
     }
 
     .right-one {
@@ -217,6 +210,10 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    button {
+        margin-bottom: 30px;
     }
 
     .attribution {
