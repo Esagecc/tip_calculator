@@ -13,6 +13,7 @@
     --lt-gray-cyan: hsl(185, 41%, 84%);
     --lter-gray-cyan: hsl(189, 41%, 97%);
     --white: hsl(0, 0%, 100%);
+    --red: #b22222;
 }
 
 body {
@@ -141,6 +142,13 @@ button {
      padding: 10px 0;
 }
 
+.error {
+    color: var(--red);
+    position: absolute;
+    transform: translate(198px, -30px);
+    display: none;
+}
+
 .attribution a {
     color: hsl(228, 45%, 44%); 
 }
@@ -220,5 +228,10 @@ button {
         position: absolute;
         bottom: 0rem;
         width: 400px;
+    }
+
+    .error {
+        transform: translate(285px, -30px);
+
     }
 }
