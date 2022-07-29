@@ -54,7 +54,7 @@
           <p>
             Number of People
           </p>
-          <div class="error" id="peopleError">Can't be zero</div>
+          <div id="peopleError">Can't be zero</div>
           <input type="number" class="people" id="people" placeholder="0"><img src="images/icon-person.svg" class="person"  alt="">
           
       </section>
@@ -71,9 +71,15 @@
                   / person
                 </h6>
               </div>
-              <span></span><div class="value" id="one">
-        
+              <div>
+                <span class="value">
+                  $
+                </span>
+                <span class="value" id="one">
+                  0.00
+                </span>
               </div>
+              
           </div>
 
           <div class="right-two">
@@ -85,13 +91,20 @@
                 / person
               </h6>
             </div>
-            <div class="value" id="two">
+            <div class="">
+              <span class="value">
+                $
+              </span>
+              <span class="value" id="two">
+                0.00
+              </span>
             </div>
+            
           </div>
 
         </div>
 
-        <button type="reset" id="reset">
+        <button type="reset" id="reset" value="Reset">
           Reset
         </button>
 

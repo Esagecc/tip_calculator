@@ -141,17 +141,21 @@ button {
     border-radius: 5px;
     font-weight: 700;
 }
+
+button:hover {
+    background-color: var(--cyan);
+}
 .attribution {
      font-size: 11px;
      text-align: center; 
      padding: 10px 0;
 }
 
-.error {
+#peopleError {
     color: var(--red);
     position: absolute;
     transform: translate(198px, -30px);
-    display: none;
+    visibility: hidden;
 }
 
 .attribution a {
@@ -222,7 +226,7 @@ button {
     .right {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content:space-between;
     }
 
     button {
@@ -235,8 +239,8 @@ button {
         width: 400px;
     }
 
-    .error {
-        transform: translate(285px, -30px);
+    #peopleError {
+        transform: translate(282px, -30px);
 
     }
 }
