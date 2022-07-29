@@ -93,6 +93,11 @@ header {
     color: var(--dk-cyan);
 }
 
+.card:active {
+    background-color: var(--cyan);
+    color: var(--dk-cyan);
+}
+
 .person {
     transform: translate(20px, -32px);
 }
@@ -119,7 +124,7 @@ h6 {
     font-size: .8rem;
 }
 
-.amount {
+.value {
     color: var(--cyan);
     font-size: 2rem;
 }
@@ -210,7 +215,7 @@ button {
         font-size: 1rem;
     }
 
-    .amount {
+    .value {
         font-size: 3rem;
     }
     

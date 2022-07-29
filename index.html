@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -23,7 +23,6 @@
         <p>
           Bill
         </p>        
-        <div class="error" id="billError">Can't be zero</div>
         <input type="number" class="bill" id="bill" placeholder="0">
         <img src="images/icon-dollar.svg" class="dollar" alt="">
 
@@ -33,22 +32,22 @@
             </p>
 
             <div class="percent">
-              <div class="card">
+              <div class="card" name="tip" onclick="getTip(0.05)">
                 5%
               </div>
-              <div class="card">
+              <div class="card" name="tip" onclick="getTip(0.1)">
                 10%
               </div>
-              <div class="card">
+              <div class="card" name="tip" onclick="getTip(0.15)">
                 15%
               </div>
-              <div class="card">
+              <div class="card" name="tip" onclick="getTip(0.25)">
                 25%
               </div>
-              <div class="card">
+              <div class="card" name="tip" onclick="getTip(0.5)">
                 50%
               </div>
-              <input type="NUMBER" class="custom" placeholder="Custom">
+              <input type="number" class="custom" placeholder="Custom" name="tip" id="custom">
             </div>
           </div>
 
@@ -56,7 +55,7 @@
             Number of People
           </p>
           <div class="error" id="peopleError">Can't be zero</div>
-          <input type="number" class="people" placeholder="0"><img src="images/icon-person.svg" class="person"  alt="">
+          <input type="number" class="people" id="people" placeholder="0"><img src="images/icon-person.svg" class="person"  alt="">
           
       </section>
 
@@ -72,8 +71,8 @@
                   / person
                 </h6>
               </div>
-              <div class="amount" id="one">
-                $0.00
+              <span></span><div class="value" id="one">
+        
               </div>
           </div>
 
@@ -86,14 +85,13 @@
                 / person
               </h6>
             </div>
-            <div class="amount" id="two">
-              $0.00
+            <div class="value" id="two">
             </div>
           </div>
 
         </div>
 
-        <button type="reset">
+        <button type="reset" id="reset">
           Reset
         </button>
 
